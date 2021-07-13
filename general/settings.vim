@@ -35,6 +35,8 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
                                         " to copy/paste utilities run {sudo pacman -S xsel} 
 
+let g:coc_disable_startup_warning = 1
+
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 " You can't stop me
