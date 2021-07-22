@@ -14,6 +14,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+    "vim startify
+    Plug 'mhinz/vim-startify'
     " One dark theme 
     Plug 'joshdick/onedark.vim'
     " Stable version of coc
