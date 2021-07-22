@@ -14,8 +14,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-    "vim startify
+    "startify
     Plug 'mhinz/vim-startify'
+    "closetag
+    Plug 'alvan/vim-closetag'
     " One dark theme 
     Plug 'joshdick/onedark.vim'
     " Stable version of coc
