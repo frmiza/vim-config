@@ -22,6 +22,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'joshdick/onedark.vim'
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    "ranger
+    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
     " Vim airline
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'    
