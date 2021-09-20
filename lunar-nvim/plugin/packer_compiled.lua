@@ -69,17 +69,21 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["nvim-tree.lua"] = {
+  ["nvim-compe"] = {
     loaded = true,
-    path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+    path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/nvim-compe"
   },
-  ["nvim-web-devicons"] = {
+  ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/vim-vsnip"
   }
 }
 
