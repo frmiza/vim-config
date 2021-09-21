@@ -1,9 +1,10 @@
 require('plugins')
-require('keymappings')
+-- Configs 
 require('settings')
+require('keymappings')
 require('colorschemes')
 
---Plugins
+-- Plugins
 require('nv-compee')
 require('nv-colorizer')
 require('nv-lualine')

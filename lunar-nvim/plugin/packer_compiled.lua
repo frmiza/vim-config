@@ -69,9 +69,9 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["lualine.nvim"] = {
+  ["galaxyline.nvim"] = {
     loaded = true,
-    path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+    path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
   },
   ["nvim-colorizer.lua"] = {
     loaded = true,
