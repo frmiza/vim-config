@@ -1,4 +1,9 @@
 require('plugins')
 require('keymappings')
-require('nv-compee')
 require('settings')
+require('colorschemes')
+
+--Plugins
+require('nv-compee')
+require('nv-colorizer')
+require('nv-lualine')

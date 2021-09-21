@@ -9,6 +9,7 @@ vim.o.cmdheight = 2               -- More space for displaying messages
 vim.o.mouse = 'a'                 -- Set mouse
 vim.o.splitright = true           -- Vertical split alway to the right
 --vim.o.t_Co = "256"              -- Suport 256 colors
+vim.o.termguicolors = true        
 vim.o.tabstop = 2                 -- Insert 2 spaces for a tab
 vim.o.shiftwidth = 2              -- Change the number of space characters inserted for indentation
 vim.o.smarttab = true             -- Makes tabbing smarter will realize you have 2 vs 4
