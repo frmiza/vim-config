@@ -8,5 +8,12 @@ require('colorschemes')
 require('nv-compee')
 require('nv-colorizer')
 require('nv-galaxyline')
+require('nv-treesitter')
 require('nv-bufferline')
 require('nv-icons')
+
+--LSPs
+require('lsp')
+require('lsp.python-ls')
+require('lsp.js-ts-ls')
+require('lsp.ccls-ls')

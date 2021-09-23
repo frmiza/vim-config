@@ -4,7 +4,7 @@ vim.g.mapleader = ' '
 
 vim.api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>',{noremap = true, silent = true})
 
-vim.api.nvim_set_keymap('n', '<Leader>e', ':Lexplore<CR>',{noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>t', ':NvimTreeToggle<CR>',{noremap = true, silent = true})
 
 
 --Resize Window
