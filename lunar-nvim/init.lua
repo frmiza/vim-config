@@ -7,4 +7,6 @@ require('colorschemes')
 -- Plugins
 require('nv-compee')
 require('nv-colorizer')
-require('nv-lualine')
+require('nv-galaxyline')
+require('nv-bufferline')
+require('nv-icons')

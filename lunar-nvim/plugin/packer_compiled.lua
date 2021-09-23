@@ -69,6 +69,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
+  },
   ["galaxyline.nvim"] = {
     loaded = true,
     path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
