@@ -33,5 +33,5 @@ return require('packer').startup(function()
   -- themes
   use 'norcalli/nvim-colorizer.lua'
   use 'monsonjeremy/onedark.nvim'
-
+  use 'Yagua/nebulous.nvim'
 end)
