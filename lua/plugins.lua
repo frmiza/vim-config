@@ -29,8 +29,14 @@ return require('packer').startup(function()
 --Telescope
   use {
     'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
-  
-  -- themes
+
+--Autopairs
+  use 'windwp/nvim-autopairs'
+
+--LSPSaga
+  use 'glepnir/lspsaga.nvim'
+
+-- Themes
   use 'norcalli/nvim-colorizer.lua'
   use 'monsonjeremy/onedark.nvim'
   use 'Yagua/nebulous.nvim'

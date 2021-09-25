@@ -1,32 +1,34 @@
+-- Another icons  
 vim.fn.sign_define("LspDiagnosticSignError", {
   texthl = "LspDiagnosticSignError",
-  text = "X",
+  text = "",
   numhl = "LspDiagnosticSignError"
 })
 
+-- Another icons      
 vim.fn.sign_define("LspDiagnosticSignWarning", {
   texthl = "LspDiagnosticSignWarning",
-  text = "A",
+  text = "",
   numhl = "LspDiagnosticSignWarning"
 })
 
+-- Another icons      
 vim.fn.sign_define("LspDiagnosticSignInformation", {
   texthl = "LspDiagnosticSignInformation",
-  text = "i",
+  text = "",
   numhl = "LspDiagnosticSignInformation"
 })
 
+-- Another icons   
 vim.fn.sign_define("LspDiagnosticSignHint", {
   texthl = "LspDiagnosticSignHint",
-  text = "H",
+  text = "",
   numhl = "LspDiagnosticSignHint"
 })
-
-local nvim_lsp = require('lspconfig')
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 --local servers = { 'pyright', 'tsserver' }
---for _, lsp in ipairs(servers) do
+  --for _, lsp in ipairs(servers) do
 --  nvim_lsp[lsp].setup {
 --    on_attach = on_attach,
 --  }

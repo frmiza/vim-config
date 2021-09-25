@@ -8,18 +8,17 @@ local colors = {
   black = '#09040A',
   yellow = '#fabd2f',
   cyan = '#008080',
-  darkblue = '#081633',
   green = '#b9f27c',
   orange = '#FF8800',
   purple = '#5d4d7a',
-  bg1 = '#3a405e',
-  bg2 = '#232433', 
+  mid_blue = '#3a405e',
+  deep_blue = '#232433', 
   magenta = '#d16d9e',
   deep_grey = '#2C323C',
   grey = '#3E4452',
   light_grey = '#C3C3C5',
   blue = '#7da6ff',
-  deep_blue = '#1A1B26',
+  isr_bg = '#1A1B26',
   red = '#ec5f67'
 }
 
@@ -35,13 +34,13 @@ local function get_current_file_name()
     if vim.fn.empty(file) == 1 then
        return ' '
     end
-    return file .. ' '
+    return file .. ''
   end
 
 gls.left[1] = {
   FirstElement = {
     provider = function() return '▋' end,
-    highlight = {colors.bg2,colors.bg2}
+    highlight = {colors.deep_blue,colors.deep_blue}
   },
 }
 gls.left[2] = {
@@ -98,9 +97,11 @@ gls.left[2] = {
       }
       local vim_mode = vim.fn.mode()
       vim.api.nvim_command('hi GalaxyViMode guifg='..mode_color[vim_mode])
-      return alias[vim_mode] .. ' '
+      return alias[vim_mode] .. ''
     end,
-    highlight = {colors.red,colors.bg2,'bold'},
+    separator = '▌',
+    separator_highlight = {colors.deep_blue, colors.deep_grey},
+    highlight = {colors.red,colors.deep_blue,'bold'},
   },
 }
 
@@ -108,8 +109,8 @@ gls.left[3] ={
   FileIcon = {
     provider = 'FileIcon',
     condition = buffer_not_empty,
-    separator = ' ',
-    separator_highlight = {colors.purple,colors.deep_grey},
+    separator = '',
+    separator_highlight = {colors.deep_grey,colors.deep_blue},
     highlight = {require('galaxyline.provider_fileinfo').get_file_icon_color,colors.deep_grey},
   },
 }
@@ -118,17 +119,17 @@ gls.left[4] = {
   FileName = {
     provider = get_current_file_name,
     condition = buffer_not_empty,
-    separator = '',
-    separator_highlight = {colors.purple,colors.deep_grey},
+    separator = '▌',
+    separator_highlight = {colors.deep_grey,colors.mid_blue},
     highlight = {colors.light_grey,colors.deep_grey}
   }
 }
 
 gls.left[5] = {
   GitIcon = {
-    provider = function() return "  " end,
+    provider = function() return " " end,
     condition = buffer_not_empty,
-    highlight = {colors.orange,colors.bg1},
+    highlight = {colors.orange,colors.mid_blue},
   }
 }
 
@@ -136,7 +137,7 @@ gls.left[6] = {
   GitBranch = {
     provider = 'GitBranch',
     condition = buffer_not_empty,
-    highlight = {colors.grey,colors.bg1},
+    highlight = {colors.grey,colors.mid_blue},
   }
 }
 
@@ -210,30 +211,32 @@ gls.right[1]= {
   FileFormat = {
     provider = 'FileFormat',
     separator = ' ',
-    separator_highlight = {colors.bg1,colors.bg1},
-    highlight = {colors.light_grey,colors.bg1},
+    separator_highlight = {colors.mid_blue,colors.mid_blue},
+    highlight = {colors.light_grey,colors.mid_blue},
   }
 }
 gls.right[2] = {
   LineInfo = {
     provider = 'LineColumn',
     separator = ' | ',
-    separator_highlight = {colors.deep_blue,colors.bg1},
-    highlight = {colors.light_grey,colors.bg1},
+    separator_highlight = {colors.isr_bg,colors.mid_blue},
+    highlight = {colors.light_grey,colors.mid_blue},
   },
 }
+
 gls.right[3] = {
   PerCent = {
     provider = 'LinePercent',
     separator = ' ',
-    separator_highlight = {colors.bg1,colors.bg1},
-    highlight = {colors.light_grey,colors.bg2},
-  }
+    separator_highlight = {colors.mid_blue,colors.mid_blue},
+    highlight = {colors.light_grey,colors.deep_blue},
+  },
 }
+
 gls.right[4] = {
   ScrollBar = {
     provider = 'ScrollBar',
-    highlight = {colors.blue,colors.bg2},
+    highlight = {colors.blue,colors.deep_blue},
   }
 }
 
@@ -243,7 +246,7 @@ gls.short_line_left[1] = {
     provider = 'FileTypeName',
     separator = '12',
     separator_highlight = {colors.purple,colors.bg},
-    highlight = {colors.bg1,colors.bg1}
+    highlight = {colors.mid_blue,colors.mid_blue}
   }
 }
 
