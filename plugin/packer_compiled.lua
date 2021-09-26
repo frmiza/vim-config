@@ -77,10 +77,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
   },
-  ["lspsaga.nvim"] = {
-    loaded = true,
-    path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/lspsaga.nvim"
-  },
   ["nebulous.nvim"] = {
     loaded = true,
     path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/nebulous.nvim"

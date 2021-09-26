@@ -12,10 +12,9 @@ require('nv-treesitter')
 require('nv-bufferline')
 require('nv-icons')
 require('nv-autopairs')
-require('nv-lspsaga')
 
 --LSPs
-require('lsp.init')
+require('lsp')
 require('lsp.python-ls')
 require('lsp.js-ts-ls')
 require('lsp.ccls-ls')

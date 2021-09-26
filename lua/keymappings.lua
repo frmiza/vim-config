@@ -2,8 +2,10 @@ vim.api.nvim_set_keymap('n', '<Sapace>', '<NOP>',{noremap = true, silent = true}
 
 vim.g.mapleader = ' ' 
 
+--LeaderKey 
 vim.api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>',{noremap = true, silent = true})
 
+--Open/Close Nvin tree 
 vim.api.nvim_set_keymap('n', '<Leader>t', ':NvimTreeToggle<CR>',{noremap = true, silent = true})
 
 
