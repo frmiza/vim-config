@@ -77,6 +77,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
   },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim"
+  },
   ["nebulous.nvim"] = {
     loaded = true,
     path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/nebulous.nvim"

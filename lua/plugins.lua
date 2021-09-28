@@ -25,13 +25,16 @@ return require('packer').startup(function()
  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
  use 'nvim-treesitter/playground'
 
+-- Autopairs
+  use 'windwp/nvim-autopairs'
+
+
+-- Lsp_signature
+  use 'ray-x/lsp_signature.nvim'
 
 --Telescope
   use {
     'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
-
---Autopairs
-  use 'windwp/nvim-autopairs'
 
 -- Themes
   use 'norcalli/nvim-colorizer.lua'
