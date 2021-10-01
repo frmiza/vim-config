@@ -20,3 +20,4 @@
   require('lsp.python-ls')
   require('lsp.js-ts-ls')
   require('lsp.ccls-ls')
+  require('lsp.bash-ls')
