@@ -5,7 +5,7 @@
   require('colorschemes')
 
   -- Plugins
-  require('nv-compee')
+  require('nv-cmp')
   require('nv-colorizer')
   require('nv-galaxyline')
   require('nv-treesitter')
@@ -13,11 +13,7 @@
   require('nv-icons')
   require('nv-autopairs')
   require('nv-tree')
-  require('nv-xray')
+  require('nv-toggleterm')
 
   --LSPs
   require('lsp')
-  require('lsp.python-ls')
-  require('lsp.js-ts-ls')
-  require('lsp.ccls-ls')
-  require('lsp.bash-ls')
