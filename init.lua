@@ -14,6 +14,7 @@
   require('nv-autopairs')
   require('nv-tree')
   require('nv-toggleterm')
-
+--  require('nv-marks') 
+  require('nv-luasnip')
   --LSPs
   require('lsp')

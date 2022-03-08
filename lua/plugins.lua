@@ -49,10 +49,10 @@ return require('packer').startup(function()
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
   use 'saadparwaiz1/cmp_luasnip'
-  use "hrsh7th/cmp-nvim-lsp"
 
 -- Luasnip
   use 'L3MON4D3/LuaSnip'
+  use "rafamadriz/friendly-snippets"
 
 -- LSP
   use 'neovim/nvim-lspconfig'
@@ -79,6 +79,9 @@ return require('packer').startup(function()
 
 -- ToggleTerm 
   use "akinsho/toggleterm.nvim"
+
+-- Marks
+--  use "chentau/marks.nvim"
 
 -- Lsp_signature
   use 'ray-x/lsp_signature.nvim'

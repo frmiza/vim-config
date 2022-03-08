@@ -64,4 +64,3 @@ lsp_keymaps(
 lsp_keymaps(bufnr, "n", "]d", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>', opts)
 lsp_keymaps(bufnr, "n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
 keymaps("n", "<leader>f", "<cmd>lua vim.lsp.buf.formatting_sync()<CR>", opts)
-
