@@ -1,9 +1,10 @@
   require('plugins')
+  
   -- Configs 
   require('settings')
   require('keymappings')
   require('colorschemes')
-
+  
   -- Plugins
   require('nv-cmp')
   require('nv-colorizer')
@@ -14,7 +15,9 @@
   require('nv-autopairs')
   require('nv-tree')
   require('nv-toggleterm')
---  require('nv-marks') 
+  require('nv-gitsigns')
+  --  require('nv-marks') 
   require('nv-luasnip')
+  
   --LSPs
   require('lsp')

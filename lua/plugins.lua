@@ -57,6 +57,9 @@ return require('packer').startup(function()
 -- LSP
   use 'neovim/nvim-lspconfig'
 
+-- Gitsigns
+  use 'lewis6991/gitsigns.nvim'
+
 -- Null-LS 
   use 'jose-elias-alvarez/null-ls.nvim'
 
