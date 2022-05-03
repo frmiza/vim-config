@@ -114,15 +114,15 @@ _G.packer_plugins = {
     path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/galaxyline.nvim",
     url = "https://github.com/glepnir/galaxyline.nvim"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["lsp_signature.nvim"] = {
     loaded = true,
     path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
     url = "https://github.com/ray-x/lsp_signature.nvim"
-  },
-  ["marks.nvim"] = {
-    loaded = true,
-    path = "/home/shoyo/.local/share/nvim/site/pack/packer/start/marks.nvim",
-    url = "https://github.com/chentau/marks.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,

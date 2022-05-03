@@ -74,8 +74,10 @@ return require('packer').startup(function()
   use {'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons'}
 
 -- Treesitter
-  use { 'nvim-treesitter/nvim-treesitter', run = ":TSUpdate", }
-
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
 -- Autopairs
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
