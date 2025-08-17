@@ -191,9 +191,23 @@ return {
 				lualine_c = {}, -- Middle section is empty as per Galaxyline config
 				lualine_x = {
 					{
+						function()
+							if vim.opt.spell:get() then
+								local lang = vim.bo.spelllang:match("^[^,]+")
+								return lang
+							end
+							return ""
+						end,
+						cond = function()
+							return vim.opt.spell:get()
+						end,
+						color = { fg = colors.light_grey, bg = colors.mid_blue },
+						padding = { left = 1, right = 0 },
+					},
+					{
 						"fileformat",
 						color = { fg = colors.light_grey, bg = colors.mid_blue },
-						padding = { left = 2, right = 1 },
+						padding = { left = 1, right = 0 },
 					},
 					{
 						-- Este componente agora mostra "linha atual | total de linhas"
@@ -203,7 +217,7 @@ return {
 							return string.format("%s │ %s", current_line, total_lines)
 						end,
 						color = { fg = colors.light_grey, bg = colors.mid_blue },
-						padding = { left = 0, right = 1 }, -- Adicione padding se desejar espaçamento
+						padding = { left = 1, right = 1 }, -- Adicione padding se desejar espaçamento
 					},
 				},
 				lualine_y = {},
