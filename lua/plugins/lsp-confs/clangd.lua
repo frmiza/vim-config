@@ -1,7 +1,5 @@
 return function(capabilities)
-	local lspconfig = require("lspconfig")
-
-	lspconfig.clangd.setup({
+  vim.lsp.config['clangd'] = {
 		capabilities = capabilities,
 		cmd = {
 			"clangd",
@@ -14,5 +12,5 @@ return function(capabilities)
 		init_options = {
 			fallbackFlags = {},
 		},
-	})
+	}
 end

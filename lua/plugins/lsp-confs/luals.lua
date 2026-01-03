@@ -1,8 +1,7 @@
 -- ~/.config/nvim/lua/plugins/lsp_confs/luals.lua
 return function(capabilities)
-	local lspconfig = require("lspconfig")
 
-	lspconfig.lua_ls.setup({
+  vim.lsp.config['lua_ls'] = {
 		capabilities = capabilities,
 		settings = {
 			Lua = {
@@ -17,5 +16,5 @@ return function(capabilities)
 				},
 			},
 		},
-	})
+	}
 end

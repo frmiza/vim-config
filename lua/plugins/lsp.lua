@@ -77,5 +77,6 @@ return {
 		-- })
 		require("plugins.lsp-confs.luals")(capabilities)
 		require("plugins.lsp-confs.clangd")(capabilities)
+		require("plugins.lsp-confs.wolfram")(capabilities)
 	end,
 }
